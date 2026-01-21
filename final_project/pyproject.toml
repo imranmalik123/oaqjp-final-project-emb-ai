@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EmotionDetection"
+version = "1.0.0"
+description = "Emotion detection package using Watson NLP"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["requests"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["EmotionDetection*"]
